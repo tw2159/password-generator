@@ -14,7 +14,7 @@ Website
 
 https://tw2159.github.io/password-generator/
 
-![Screenshot of top of page](./assets/images/page-screenshot.jpg)
+![Screenshot of top of page](./password-generator/Develop/page-screenshot.jpg)
 
 Contribution
 
