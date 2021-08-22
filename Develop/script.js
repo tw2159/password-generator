@@ -30,7 +30,7 @@ function getCharacters() {
   var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   var numeric = "0123456789";
   var special = " !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
-
+  var characters ="";
 
   var includeLowerCase = confirm("Would you like to include lowercase characters in your password?");
   var includeUpperCase = confirm("Would you like to include uppercase characters in your password?");
@@ -59,6 +59,18 @@ function getCharacters() {
   return characters;
 }
 
+function generatePassword() {
+  var result = "";
+
+  var passwordLength = getPasswordLength();
+  var characters = getCharacters();
+
+  for(var i = 0; i < passwordLength; i++) {
+    result += characters.charAt(Math.floor(Math.random() * characters.length));
+    console.log(result)
+  }
+  return result;
+}
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
